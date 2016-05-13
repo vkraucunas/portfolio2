@@ -1,0 +1,21 @@
+$black: #2d2d2d;
+$teal: #257174;
+$mustard: #f5c631;
+$mint: #B5d6b2;
+$grey: #4d5457;
+$cream: #faf3e7;
+
+
+html {
+    background-color: $black;
+    color: $cream;
+
+    body {
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+    a {
+        text-decoration: none;
+        color: $mustard;
+    }
+}

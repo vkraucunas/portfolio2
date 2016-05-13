@@ -1,0 +1,9 @@
+html {
+  background-color: #2d2d2d;
+  color: #faf3e7; }
+  html body {
+    margin-left: 50px;
+    margin-right: 50px; }
+  html a {
+    text-decoration: none;
+    color: #f5c631; }
