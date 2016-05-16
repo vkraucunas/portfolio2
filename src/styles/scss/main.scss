@@ -8,14 +8,83 @@ $cream: #faf3e7;
 
 html {
     background-color: $black;
-    color: $cream;
+
+    #logo {
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100vh;
+        width: 6%;
+        overflow-y:scroll;
+    }
 
     body {
-        margin-left: 50px;
-        margin-right: 50px;
+        margin-top: 40px;
+        color: $cream;
+        font-family: sans-serif;
+
+        .build {
+            margin-left: 30px;
+        }
     }
     a {
         text-decoration: none;
         color: $mustard;
     }
+    a:hover {
+        color: $mint;
+    }
+    header {
+        linear-gradient: (90deg, $grey, $black);
+        text-align: center;
+
+        nav {
+            display:flex;
+            flex-direction: row;
+
+            a {
+                flex-grow: 2;
+            }
+        }
+    }
+    footer {
+        text-align: center;
+    }
+}
+
+#headshot {
+    border-radius: 50%;
+}
+
+hr {
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+
+#contact {
+    text-align: center;
+}
+
+#banner {
+    width: 100%;
+    margin: auto;
+}
+
+
+h1 {
+    font-size: 3rem;
+    -webkit-margin-before: 0;
+    -webkit-margin-after: 0;
+}
+h2 {
+    font-size: 2.5rem;
+}
+h3 {
+    font-size: 2rem;
+}
+a h4 {
+    font-size: 2.5rem;
+}
+a h5 {
+    font-size: 2rem;
 }

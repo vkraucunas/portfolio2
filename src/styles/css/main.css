@@ -1,9 +1,61 @@
 html {
-  background-color: #2d2d2d;
-  color: #faf3e7; }
+  background-color: #2d2d2d; }
+  html #logo {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 6%;
+    overflow-y: scroll; }
   html body {
-    margin-left: 50px;
-    margin-right: 50px; }
+    margin-top: 40px;
+    color: #faf3e7;
+    font-family: sans-serif; }
+    html body .build {
+      margin-left: 30px; }
   html a {
     text-decoration: none;
     color: #f5c631; }
+  html a:hover {
+    color: #B5d6b2; }
+  html header {
+    linear-gradient: 90deg, #4d5457, #2d2d2d;
+    text-align: center; }
+    html header nav {
+      display: flex;
+      flex-direction: row; }
+      html header nav a {
+        flex-grow: 2; }
+  html footer {
+    text-align: center; }
+
+#headshot {
+  border-radius: 50%; }
+
+hr {
+  margin-bottom: 20px;
+  margin-top: 10px; }
+
+#contact {
+  text-align: center; }
+
+#banner {
+  width: 100%;
+  margin: auto; }
+
+h1 {
+  font-size: 3rem;
+  -webkit-margin-before: 0;
+  -webkit-margin-after: 0; }
+
+h2 {
+  font-size: 2.5rem; }
+
+h3 {
+  font-size: 2rem; }
+
+a h4 {
+  font-size: 2.5rem; }
+
+a h5 {
+  font-size: 2rem; }
