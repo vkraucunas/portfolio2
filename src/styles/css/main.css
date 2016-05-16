@@ -59,3 +59,7 @@ a h4 {
 
 a h5 {
   font-size: 2rem; }
+
+#gallery {
+  display: flex;
+  flex-direction: row; }
