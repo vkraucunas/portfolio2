@@ -15,62 +15,17 @@ $(function() {
          add 180 deg to get rid of the negative values
          divide by 90 to get the quadrant
          add 3 and do a modulo by 4  to shift the quadrants to a proper clockwise TRBL (top/right/bottom/left) **/
-        var direction = Math.round((((Math.atan2(y, x) * (180 / Math.PI)) + 180) / 90) + 3) % 4;
+        // var direction = Math.round((((Math.atan2(y, x) * (180 / Math.PI)) + 180) / 90) + 3) % 4;
+        var direction = 0;
 
 
-
-        /** check for direction **/
-        switch (direction) {
-            case 0:
-                // direction top
-                var slideFrom = {
-                    "top": "-100%",
-                    "right": "0"
-                };
-                var slideTo = {
-                    "top": 0
-                };
-
-                var imgSlide = "0, 0";
-                break;
-            case 1: //
-                // direction right
-                var slideFrom = {
-                    "top": "0",
-                    "right": "-100%"
-                };
-                var slideTo = {
-                    "right": 0
-                };
-
-                var imgSlide = "0, 0";
-                break;
-            case 2:
-                // direction bottom
-                var slideFrom = {
-                    "top": "100%",
-                    "right": "0"
-                };
-                var slideTo = {
-                    "top": 0
-                };
-
-                var imgSlide = "0, 0";
-                break;
-            case 3:
-                // direction left
-                var slideFrom = {
-                    "top": "0",
-                    "right": "100%"
-                };
-                var slideTo = {
-                    "right": 0
-                };
-
-                var imgSlide = "0, 0";
-                break;
-        }
-
+        var slideFrom = {
+            "top": "-100%",
+            "right": "0"
+        };
+        var slideTo = {
+            "top": 0
+        };
 
 
         if (e.type === 'mouseenter') {
@@ -78,11 +33,11 @@ $(function() {
             var element = $(this);
 
             element.find(".info").removeClass("transform").css(slideFrom);
-            element.find("img").addClass("transform").css("transform", "matrix(1, 0, 0, 1," + imgSlide + ")");
+            element.find("img").addClass("transform").css("transform", "matrix(1, 0, 0, 1, 0, 0)");
 
             setTimeout(function() {
                 element.find(".info").addClass("transform").css(slideTo);
-            }, 1);
+            }, 1.5);
 
 
         } else {
@@ -90,11 +45,11 @@ $(function() {
             var element = $(this);
 
             element.find(".info").addClass("transform").css(slideFrom);
-            element.find("img").removeClass("transform").css("transform", "matrix(1, 0, 0, 1," + imgSlide + ")");
+            element.find("img").removeClass("transform").css("transform", "matrix(1, 0, 0, 1, 0, 0)");
 
             setTimeout(function() {
                 element.find("img").addClass("transform").css("transform", "matrix(1, 0, 0, 1,0,0)");
-            }, 1);
+            }, 1.5);
 
         }
 
