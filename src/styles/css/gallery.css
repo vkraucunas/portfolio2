@@ -33,11 +33,11 @@
 
 .gallery img {
     position: relative;
-    width: auto\9;
+    width: auto\8;
     height: auto;
     max-width: 100%;
     vertical-align: middle;
-    border: 0;
+    border: 2px white solid;
     -ms-interpolation-mode: bicubic;
     -webkit-backface-visibility: hidden;
     -webkit-transform: translateZ(0);
