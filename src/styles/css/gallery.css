@@ -51,7 +51,7 @@
     z-index: 10;
     background: rgba(37, 113, 116, .8);
     text-align: center;
-    font-family: sans-serif;
+    font-family: 'Poppins', sans-serif;
     -webkit-transform: translateZ(0);
     transform: translateZ(0);
 }
